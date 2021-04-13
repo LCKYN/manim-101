@@ -26,19 +26,27 @@ class Grid(Scene):
             Text("point : "),
             DecimalNumber(
                 0,
-                show_ellipsis=True,
-                num_decimal_places=4
+                show_ellipsis=False,
+                num_decimal_places=0
             )
         )
 
         in_text, in_number = in_label = VGroup(
             Text("In a circle : "),
-            DecimalNumber(0)
+            DecimalNumber(
+                0,
+                show_ellipsis=False,
+                num_decimal_places=0
+            )
         )
 
         pi_text, pi_number = pi_label = VGroup(
             Text("PI : "),
-            DecimalNumber(0)
+            DecimalNumber(
+                0,
+                show_ellipsis=True,
+                num_decimal_places=4
+            )
         )
         point_label.arrange(RIGHT)
         in_label.arrange(RIGHT)
@@ -64,10 +72,10 @@ class Grid(Scene):
         for i in range(200):
             pos = (-6 + ran.random() * 4, -2 + ran.random() * 4, 0)
             if((pos[0] + 4) ** 2 + pos[1] ** 2 < 4):
-                d = Dot(color=RED, radius = 0.25)
+                d = Dot(color=RED, radius = 0.001)
                 c += 1
             else:
-                d = Dot(color=GREEN, radius = 0.25)
+                d = Dot(color=GREEN, radius = 0.001)
             d.move_to(pos)
             self.play(Create(d, run_time=0.05))
             count_all = i
