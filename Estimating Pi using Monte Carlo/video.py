@@ -3,7 +3,7 @@ import numpy as np
 import random as ran
 
 
-class Grid(Scene):
+class MonteCarlo(Scene):
     def construct(self):
 
         offset = (-4, 0, 0)
