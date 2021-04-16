@@ -64,7 +64,7 @@ class Grid(Scene):
 
         ran.seed(1)
 
-        for i in range(21):
+        for i in range(5001):
             pos = (-6 + ran.random() * 4, -2 + ran.random() * 4, 0)
             if((pos[0] + 4) ** 2 + pos[1] ** 2 < 4):
                 d = Dot(color=RED, radius = 0.04)
@@ -72,7 +72,7 @@ class Grid(Scene):
             else:
                 d = Dot(color=GREEN, radius = 0.04)
             d.move_to(pos)
-            
+
             self.play(Create(d, run_time=0.05))
             count_all = i
             apx_pi = c/(i+1) * 4
