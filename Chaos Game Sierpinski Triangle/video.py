@@ -3,7 +3,7 @@ import numpy as np
 import random as ran
 
 
-class MonteCarlo(Scene):
+class SierpinskiTriangle(Scene):
     def construct(self):
         self.wait()
 
