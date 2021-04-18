@@ -32,7 +32,7 @@ class SierpinskiTriangle(Scene):
         for i in range(10):
             tempset = set()
 
-            print(len(allDot))
+            print(i, len(allDot))
 
             for d in allDot:
                 
