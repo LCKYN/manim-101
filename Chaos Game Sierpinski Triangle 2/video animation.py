@@ -29,7 +29,7 @@ class SierpinskiTriangle(Scene):
         self.wait()
 
 
-        for i in range(10):
+        for i in range(5):
             tempset = set()
 
             print(i, len(allDot))
