@@ -2,7 +2,7 @@ from manim import *
 from numpy import genfromtxt
 
 rad = 0.02
-ratio = 2/3
+ratio = 3/4
 repeat = 3
 
 all_point = set()
