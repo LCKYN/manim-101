@@ -110,3 +110,21 @@ point init(csv):
     3,  0, 0
 ```
 
+---
+
+![8](/Chaos%20game/gallery/9.png)
+```
+ratio = 2/3
+repeat = 3
+
+point init(csv):
+    -3,  0, 0
+    -3,  3, 0
+    -3,  -3, 0
+    0, -3, 0
+    0,  3, 0
+    3, -3, 0
+    3,  0, 0
+    3, 3, 0
+```
+
