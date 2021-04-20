@@ -2,8 +2,8 @@ from manim import *
 from numpy import genfromtxt
 
 rad = 0.02
-ratio = 1/2
-repeat = 6
+ratio = 2/3
+repeat = 4
 
 all_point = set()
 
@@ -37,7 +37,8 @@ class ChaosGame(Scene):
                     temp.add(tuple(new_point))
 
             for count, m in enumerate(temp):
-                print(i, " : ", count, " : ", len(temp), end="\r")
+                if(count % 100 == 0):
+                    print(i, " : ", count  , " : ", len(temp), end="\r")
                 all_point.add(tuple(m))
                 dot = Dot(radius=rad).move_to((m))
                 self.add(dot)
