@@ -42,7 +42,7 @@ point init(csv):
 ![3](/Chaos%20game/gallery/3.png)
 ```
 ratio = 2/3
-repeat = 4
+repeat = 6
 
 point init(csv):
     0, 3, 0
@@ -56,11 +56,24 @@ point init(csv):
 ![4](/Chaos%20game/gallery/4.png)
 ```
 ratio = 1/2
-repeat = 4
+repeat = 6
 
 point init(csv):
     0, 3, 0
     3, -3, 0
     0,  -3, 0
+    -3, -3, 0
+```
+
+---
+
+![5](/Chaos%20game/gallery/5.png)
+```
+ratio = 1/2
+repeat = 6
+
+point init(csv):
+    0, 3, 0
+    3, -3, 0
     -3, -3, 0
 ```
