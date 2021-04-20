@@ -2,8 +2,8 @@ from manim import *
 from numpy import genfromtxt
 
 rad = 0.02
-ratio = 1/4
-repeat = 3
+ratio = 1/8
+repeat = 4
 
 all_point = set()
 
