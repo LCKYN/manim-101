@@ -112,7 +112,7 @@ point init(csv):
 
 ---
 
-![8](/Chaos%20game/gallery/9.png)
+![8](/Chaos%20game/gallery/8.png)
 ```
 ratio = 2/3
 repeat = 3
